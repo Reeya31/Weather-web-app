@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333333;
+    margin: 0;
+}
+
+.weather-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 1rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.weather-details {
+    margin-bottom: 1.5rem;
+}
+
+.weather-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.weather-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+form input[type="text"] {
+    padding: 0.6rem;
+    width: 70%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+form button {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .weather-container {
+        padding: 1.5rem;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .weather-details p {
+        font-size: 1.1rem;
+    }
+
+    form input[type="text"] {
+        width: 60%;
+    }
+
+    form button {
+        width: 35%;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-container {
+        padding: 1.2rem;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .weather-details p {
+        font-size: 1rem;
+    }
+
+    form input[type="text"] {
+        width: 55%;
+    }
+
+    form button {
+        width: 40%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
